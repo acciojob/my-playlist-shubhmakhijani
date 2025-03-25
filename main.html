@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+            margin: 20px auto;
+            width: 300px;
+        }
+        li {
+            list-style-type: none;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #333;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #0066cc;
+        }
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>My Playlist</h1>
+    
+    <h2>Now Playing...</h2>
+    <div class="player_one">
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <h2>MP3 songs</h2>
+    <div class="player_two">
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <h2>Songs Playlist</h2>
+    <ul>
+        <li><a href="#" target="_blank">Song 1 - Artist Name</a></li>
+        <li><a href="#" target="_blank">Song 2 - Artist Name</a></li>
+        <li><a href="#" target="_blank">Song 3 - Artist Name</a></li>
+        <li><a href="#" target="_blank">Song 4 - Artist Name</a></li>
+        <li><a href="#" target="_blank">Song 5 - Artist Name</a></li>
+    </ul>
 </body>
-
 </html>
